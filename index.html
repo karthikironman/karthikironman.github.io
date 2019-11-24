@@ -1,1 +1,52 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>playboys</title><link href=/css/app.27561720.css rel=preload as=style><link href=/css/chunk-vendors.f47d85ba.css rel=preload as=style><link href=/js/app.db2d6fce.js rel=preload as=script><link href=/js/chunk-vendors.7817c095.js rel=preload as=script><link href=/css/chunk-vendors.f47d85ba.css rel=stylesheet><link href=/css/app.27561720.css rel=stylesheet></head><body><noscript><strong>We're sorry but playboys doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.7817c095.js></script><script src=/js/app.db2d6fce.js></script></body></html>
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<meta http-equiv=X-UA-Compatible content="IE=edge">
+        <meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico>
+		<title>playboys</title>
+		<link href=/css/app.27561720.css rel=preload as=style>
+		<link href=/css/chunk-vendors.f47d85ba.css rel=preload as=style>
+		<link href=/js/app.db2d6fce.js rel=preload as=script>
+		<link href=/js/chunk-vendors.7817c095.js rel=preload as=script>
+		<link href=/css/chunk-vendors.f47d85ba.css rel=stylesheet>
+	    <link href=/css/app.27561720.css rel=stylesheet></head>
+	<body>
+		<noscript>
+			<strong>We're sorry but playboys doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>              </noscript>
+		<div id=app></div>
+		<script src=/js/chunk-vendors.7817c095.js></script>
+		<script src=/js/app.db2d6fce.js></script>
+		<script>
+  var div = document.createElement('div');
+  div.className = 'fb-customerchat';
+  div.setAttribute('page_id', '1121829067903445');
+  div.setAttribute('ref', '');
+  document.body.appendChild(div);
+  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+    init: function () {
+      FB.init({
+        appId            : '1678638095724206',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.3'
+      });
+    }, callable: []
+  };
+  window.fbAsyncInit = window.fbAsyncInit || function () {
+    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+    window.fbMessengerPlugins.init();
+  };
+  setTimeout(function () {
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, 0);
+</script>
+	</body>
+</html>
