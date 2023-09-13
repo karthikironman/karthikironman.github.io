@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-49.892 -27.441 788.143 544.008" xmlns="http://www.w3.org/2000/svg" xmlnsBx="https://boxy-svg.com">
+  <path d="M 135.806 -271.365 L 738.251 516.567 L -466.64 516.567 L 135.806 -271.365 Z" style="stroke: rgb(0, 0, 0);" bxShape="triangle -466.64 -271.365 1204.891 787.932 0.5 0 1@ba475733"/>
+  <rect x="133.654" y="194.241" width="306.403" height="273.806" style="paint-order: stroke; stroke: rgba(246, 203, 61, 0); stroke-linecap: round; stroke-linejoin: bevel; stroke-dashoffset: 4px; stroke-width: 9px; fill: rgb(255, 43, 0);"/>
+  <ellipse style="fill: rgb(216, 36, 0); stroke: rgb(216, 36, 0);" cx="291.962" cy="188.631" rx="118.945" ry="130.735"/>
+  <ellipse style="isolation: isolate; stroke: rgb(0, 0, 0);" cx="225.89" cy="213.759" rx="77.17" ry="97.94" transform="matrix(0.999874, -0.015879, 0, 1.000126, 67.656877, -15.901875)"/>
+  <rect x="133.654" y="194.241" width="306.403" height="99.234" style="fill: rgb(216, 36, 0); stroke: rgb(216, 36, 0);"/>
+  <ellipse style="stroke: rgb(0, 0, 0);" cx="292.915" cy="347.051" rx="25.634" ry="27.685"/>
+  <rect x="284.199" y="359.869" width="17.944" height="69.726" style="stroke: rgb(0, 0, 0);"/>
+  <rect x="133.654" y="193.29" width="50.822" height="135.285" style="fill: rgb(255, 43, 0); stroke: rgb(255, 43, 0);"/>
+  <rect x="14.279" y="192.241" width="119.375" height="136.334" style="stroke: rgb(0, 0, 0);"/>
+</svg>

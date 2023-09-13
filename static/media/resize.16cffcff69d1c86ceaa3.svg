@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="59.839 50.749 101.096 96.561" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(255, 0, 0); stroke-linecap: round; stroke-miterlimit: 1; stroke-dashoffset: 2px; stroke-width: 14px;" d="M 66.292 57.051 L 153.877 140.217"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(255, 3, 3); stroke-linecap: round; stroke-width: 14px;" d="M 153.914 140.265 L 153.877 82.974"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(255, 0, 0); stroke-linecap: round; stroke-width: 14px;" d="M 153.914 140.217 L 91.891 140.265" transform="matrix(-1, 0, 0, -1, 245.804996, 280.481999)"/>
+</svg>

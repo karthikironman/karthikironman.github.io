@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 384.767 365.655" xmlns="http://www.w3.org/2000/svg">
+  <path style="stroke-width: 9px; fill: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 103.528 58.039 L 103.428 308.179 L 139.303 306.493 L 139.403 57.476 L 103.528 58.039 Z"/>
+  <path style="stroke-width: 9px; fill: rgb(255, 255, 255); stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 160.302 58.039 L 160.202 308.179 L 196.077 306.493 L 196.177 57.476 L 160.302 58.039 Z"/>
+  <path style="stroke-width: 9px; fill: rgb(255, 255, 255); stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 241.248 49.045 L 241.148 299.185 L 277.023 297.499 L 277.123 48.482 L 241.248 49.045 Z" transform="matrix(0.970296, -0.241922, 0.241922, 0.970296, -34.356701, 67.854158)"/>
+  <ellipse style="stroke-width: 15px; fill: rgba(255, 255, 255, 0); stroke: rgb(255, 254, 254);" cx="188.87" cy="182.406" rx="180.439" ry="174.536"/>
+</svg>
