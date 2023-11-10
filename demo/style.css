@@ -336,17 +336,22 @@ ion-icon {
   position: relative;
   padding: 20px;
   height: calc(100vh - 58px);
+  display:flex;
+  flex-direction: column;
 }
 
-.messageBox .message {
+.messageBox .message_in {
   position: relative;
   padding: 10px;
   background: #fff;
   border-radius: 10px;
   border-top-left-radius: 0;
+  margin-bottom: 10px;
+  max-width:70%;
+  align-self: flex-start;
 }
 
-.messageBox .message::before {
+.messageBox .message_in::before {
   content: "";
   position: absolute;
   top: 0;
@@ -355,11 +360,30 @@ ion-icon {
   border-top: 10px solid rgb(255, 255, 255);
 }
 
+.messageBox .message_out {
+  position: relative;
+  padding: 10px;
+  background: #ebf4eb;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  margin-bottom: 10px;
+  max-width:70%;
+  align-self: flex-end;
+}
+
+.messageBox .message_out::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #f1f4eb;
+}
+
 .time {
   position: relative;
   display: block;
   font-size: 0.7em;
-  width: 100%;
   text-align: end;
   color: #777;
 }
