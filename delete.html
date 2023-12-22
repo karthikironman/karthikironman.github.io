@@ -12,17 +12,18 @@
 <body>
 
 <!-- Button to trigger the deletion of older messages -->
-<button onclick="deleteOldMessages()">Delete Older Messages 123</button>
+<button id="deleteButton">Delete Older Messages</button>
 
 <script>
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-auth-domain",
-  projectId: "your-project-id",
-  storageBucket: "your-storage-bucket",
-  messagingSenderId: "your-messaging-sender-id",
-  appId: "your-app-id"
+  apiKey: "AIzaSyBRGgc6o7YMrbDol87q0c6VL-Tka5JLRAs",
+  authDomain: "wp-clone-e1cf9.firebaseapp.com",
+  projectId: "wp-clone-e1cf9",
+  storageBucket: "wp-clone-e1cf9.appspot.com",
+  messagingSenderId: "589187349510",
+  appId: "1:589187349510:web:6e9bc207abd3a344df5787",
+  measurementId: "G-8M75BH56MP"
 };
 
 // Initialize Firebase
@@ -58,6 +59,9 @@ const deleteOldMessages = async () => {
     await firebase.auth().signOut();
   }
 };
+
+// Attach the click event handler to the button
+document.getElementById('deleteButton').addEventListener('click', deleteOldMessages);
 </script>
 
 </body>
