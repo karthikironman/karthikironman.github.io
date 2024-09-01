@@ -1,120 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COLLEGE CHATS Privacy Policy</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industry Experts for Guest Lectures</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f8f9fa;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
 
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
 
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+      }
 
-        h1, h2, h3 {
-            color: #007BFF;
-        }
+      .expert-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1rem;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-        p {
-            color: #333;
-        }
+      .expert-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-        ul {
-            color: #333;
-            margin-bottom: 20px;
-            list-style: none;
-            padding: 0;
-        }
+      .expert-card h2 {
+        margin: 1rem 0 0.5rem;
+        color: #333;
+      }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
+      .expert-card p {
+        margin: 0.5rem 0;
+        color: #666;
+      }
 
-        a:hover {
-            text-decoration: underline;
-        }
+      .expert-card a {
+        text-decoration: none;
+        color: #4caf50;
+      }
 
-        /* Responsive Styles */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            h3 {
-                font-size: 18px;
-            }
-            p {
-                font-size: 16px;
-            }
-        }
+      .request-form {
+        background-color: white;
+        border-radius: 8px;
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 600px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .request-form iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+      }
+
+      .site-intro {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .site-intro h2 {
+        color: #333;
+      }
+
+      .site-intro p {
+        max-width: 800px;
+        margin: 1rem auto;
+        color: #666;
+        font-size: 1.1rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/favicon/android-chrome-512x512.png" alt="Your Logo">
-        <h1>COLLEGE CHATS Privacy Policy</h1>
+      <h1>Connect with Industry Experts for Guest Lectures</h1>
     </header>
 
-    <p>This Privacy Policy describes how we collect, use, and disclose personal information when you use our messaging application.</p>
+  
 
-    <p>COLLEGE CHATS is a messaging app where people can message their contacts and convert selected messages into posts.</p>
+    <!-- Site Introduction Section -->
+    <section class="site-intro">
+      <h2>About Our Site</h2>
+      <p>
+        Our platform connects educational institutions with industry experts who
+        can share their knowledge and experience through guest lectures.
+      </p>
+    </section>
 
+    <section class="request-form">
+        <h2>Request a Guest Lecture</h2>
+        <p>
+          If you are interested in requesting a guest lecture from one of our
+          experts, please fill out the form below:
+        </p>
+  
+        <!-- Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBvRK_qDU4f0saQkgHGzeFKZ-LO2AWS3MWnzhXgdYykiks1A/viewform?embedded=true" width="640" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </section>
 
-    <h2>1. Information We Collect</h2>
+    <!-- Experts Section -->
+    <section class="container">
+      <!-- Expert 1 -->
+      <div class="expert-card">
+        <img src="/profile_pics/karthik.jpeg" alt="Karthik Selvaraj Picture" />
+        <h2>Karthik Selvaraj</h2>
+        <p>Software Engineer</p>
+        <p>Experience: 5 Years</p>
+        <a
+          href="https://www.linkedin.com/in/karthik-selvaraj-11ba05124/"
+          target="_blank"
+          >LinkedIn Profile</a
+        >
+      </div>
 
-    <p>We may collect the following types of information:</p>
+      <!-- Expert 2 -->
+      <div class="expert-card">
+        <img src="/profile_pics/aravind.jpeg" alt="Aravind Rajendran Picture" />
+        <h2>Aravind Rajendran</h2>
+        <p>Machine Learning Engineer</p>
+        <p>Experience: 5 Years</p>
+        <a
+          href="https://www.linkedin.com/in/aravind-kumar-rajendran/"
+          target="_blank"
+          >LinkedIn Profile</a
+        >
+      </div>
 
-    <h3>1.1 Mobile Number</h3>
-    <p>We require your mobile number for authentication purposes. We securely store this information and do not share it with third parties.</p>
-
-    <h3>1.2 Contacts</h3>
-    <p>With your permission, we may access and store your phone contacts to facilitate chatting with your friends. We do not sell or share this information with third parties.</p>
-
-    <h3>1.3 Public Feed</h3>
-    <p>When you publish a chat to the public feed, it becomes visible to other users. Please be mindful of the information you share, as it will be publicly accessible.</p>
-
-    <h2>2. Use of Information</h2>
-
-    <p>We use the collected information to:</p>
-
-    <ul>
-        <li>Authenticate your mobile number.</li>
-        <li>Facilitate communication with your contacts.</li>
-        <li>Display chats on the public feed as per your preferences.</li>
-    </ul>
-
-    <h2>3. Security</h2>
-
-    <p>We take appropriate measures to ensure the security of your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
-
-    <h2>4. Changes to Privacy Policy</h2>
-
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-
-    <h2>5. Contact Us</h2>
-
-    <!-- Replace this line with your actual email address -->
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:karthiksj008@gmail.com">karthiksj008@gmail.com</a>.</p>
-
-</body>
+      <!-- Expert 3 -->
+      <div class="expert-card">
+        <img src="/profile_pics/mageshwar.jpeg" alt="mageshwar J Picture" />
+        <h2>Mageshwar J</h2>
+        <p>UI/UX Designer</p>
+        <p>Experience: 5 Years</p>
+        <a href="https://www.linkedin.com/in/jmageshwar/" target="_blank"
+          >LinkedIn Profile</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
