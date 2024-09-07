@@ -7,260 +7,330 @@
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/profile_pics/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/profile_pics/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/profile_pics/favicon_io/favicon-16x16.png">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  <link rel="icon" type="image/png" sizes="32x32" href="/profile_pics/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/profile_pics/favicon_io/favicon-16x16.png">
 
-  header {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  header h1 {
-    margin: 0;
-  }
- /* Title Styling */
- header h2 {
-      font-size: 1.5rem;
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 100px;
+      margin-right: 2rem;
+    }
+
+    .header-text {
+      text-align: left;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .header-text h2 {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+
+      .header-text h1 {
+        font-size: 2rem;
+      }
+
+      .header-text h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .site-intro {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #000;
       color: #fff;
     }
-  .site-intro {
-    text-align: center;
-    padding: 2rem 1rem;
-  }
 
-  .site-intro h2 {
-    color: #333;
-    margin-bottom: 1rem;
-  }
+    .site-intro h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  .site-intro p {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
-    font-size: 1.1rem;
-  }
+    .site-intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
 
-  .content-section {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
+    .content-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
 
-  .form-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 3rem;
-  }
-
-  .form-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 2rem;
-    max-width: 550px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 100%;
-  }
-
-  .form-card iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-  }
-
-  .expert-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem;
-    max-width: 280px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .expert-card:hover {
-    transform: scale(1.05);
-  }
-
-  .expert-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .expert-card h2 {
-    margin: 1rem 0 0.5rem;
-    color: #333;
-  }
-
-  .expert-card p {
-    margin: 0.5rem 0;
-    color: #666;
-  }
-
-  .expert-card a {
-    text-decoration: none;
-    color: #4caf50;
-  }
-
-  .universities-section {
-    padding: 2rem 1rem;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
-  }
-
-  .universities-section h2 {
-    text-align: center;
-    color: #4caf50;
-    margin-bottom: 2rem;
-  }
-
-  .universities-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-  }
-
-  .university-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1.5rem;
-    max-width: 220px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .university-card:hover {
-    transform: scale(1.05);
-  }
-
-  .university-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .university-card h3 {
-    margin: 1rem 0 0.5rem;
-    color: #333;
-  }
-
-  @media (min-width: 900px) {
     .form-section {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 3rem;
     }
 
     .form-card {
-      flex: 1 1 48%;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 1px solid #000;
     }
-  }
-</style>
+
+    .form-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .form-card h2 {
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
+    .form-card p {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .form-card button {
+      background-color: #000;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .form-card button:hover {
+      background-color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+    }
+
+    .expert-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1rem;
+      max-width: 280px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 1px solid #000;
+    }
+
+    .expert-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .expert-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .expert-card h2 {
+      margin: 1rem 0 0.5rem;
+      color: #333;
+    }
+
+    .expert-card p {
+      color: #666;
+    }
+
+    .colleges-section {
+      padding: 2rem 1rem;
+      background-color: #fff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+
+    .colleges-section h2 {
+      text-align: center;
+      color: #000;
+      margin-bottom: 2rem;
+    }
+
+    .colleges-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .college-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 220px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 1px solid #000;
+    }
+
+    .college-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .college-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 900px) {
+      .form-section {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      .form-card {
+        flex: 1 1 45%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>GUESTLECTURE.BUZZ</h1> <!-- Added the website title here -->
-    <h2>Connect with Industry Experts for Guest Lectures</h2>
-   
+    <img src="/profile_pics/logo/GUESTLECTURE_SMALL_WHTIE.png" alt="GuestLecture.buzz Logo" /> <!-- Increased logo size -->
+    <div class="header-text">
+      <h1>GUESTLECTURE.BUZZ</h1>
+      <h2>Connect with Industry Experts for Guest Lectures</h2>
+    </div>
   </header>
 
-<!-- Site Introduction Section -->
-<section class="site-intro">
-  <h2>About Our Site</h2>
-  <p>Our platform connects educational institutions with industry experts who can share their knowledge and experience through guest lectures.</p>
-</section>
+  <!-- Site Introduction Section -->
+  <section class="site-intro">
+    <h2>About Our Platform</h2>
+    <p>Our platform connects educational institutions with industry experts who can share their knowledge and experience through guest lectures. Join us to bring real-world expertise into the classroom.</p>
+  </section>
 
-<!-- Forms Section -->
-<section class="content-section">
-  <div class="form-section">
-    <!-- Form 1: Request Guest Lecture -->
-    <div class="form-card">
-      <h2>Request a Guest Lecture</h2>
-      <p>If you are interested in requesting a guest lecture from one of our experts, please fill out the form below:</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBvRK_qDU4f0saQkgHGzeFKZ-LO2AWS3MWnzhXgdYykiks1A/viewform?embedded=true">Loading…</iframe>
+  <!-- Forms Section -->
+  <section class="content-section">
+    <div class="form-section">
+      <!-- Form 1: Request Guest Lecture -->
+      <div class="form-card">
+        <h2>Request a Guest Lecture</h2>
+        <p>If you are interested in requesting a guest lecture from one of our experts, please click the button below to fill out the form:</p>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBvRK_qDU4f0saQkgHGzeFKZ-LO2AWS3MWnzhXgdYykiks1A/viewform','_blank')">Request Now</button>
+      </div>
+
+      <!-- Form 2: Experts Connecting with Platform -->
+      <div class="form-card">
+        <h2>Experts Wanting to Connect</h2>
+        <p>If you are an industry expert interested in connecting with our platform, please click the button below to fill out the form:</p>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdbpViHUdVmBE8qVmVlluq8JbZEE4rfrWZ9xLNq2e0KMA8rkw/viewform','_blank')">Connect Now</button>
+      </div>
     </div>
+  </section>
 
-    <!-- Form 2: Experts Connecting with Platform -->
-    <div class="form-card">
-      <h2>Experts Wanting to Connect</h2>
-      <p>If you are an industry expert interested in connecting with our platform, please fill out the form below:</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbpViHUdVmBE8qVmVlluq8JbZEE4rfrWZ9xLNq2e0KMA8rkw/viewform?embedded=true" width="640" height="1256" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <!-- Experts Section -->
+  <section class="content-section">
+    <h2 style="text-align:center;">Connected Experts</h2>
+    <div class="container">
+
+      <div class="expert-card">
+        <img src="/profile_pics/shankar_sir.jpg" alt="Shankar Sir Picture" />
+        <h2>Dr Shankar Sathyapal, VU2FI</h2>
+        <p>Vice Chairman & Director</p>
+        <p> Indian Institute of Hams</p>
+        <a href="https://indianhams.com/" target="_blank">Website</a>
+      </div>
+
+      <div class="expert-card">
+        <img src="/profile_pics/karthik.jpeg" alt="Karthik Selvaraj Picture" />
+        <h2>Karthik Selvaraj</h2>
+        <p>Software Engineer</p>
+        <p>Experience: 5 Years</p>
+        <a href="https://www.linkedin.com/in/karthik-selvaraj-11ba05124/" target="_blank">LinkedIn Profile</a>
+      </div>
+
+      <div class="expert-card">
+        <img src="/profile_pics/aravind.jpeg" alt="Aravind Rajendran Picture" />
+        <h2>Aravind Rajendran</h2>
+        <p>Machine Learning Engineer</p>
+        <p>Experience: 5 Years</p>
+        <a href="https://www.linkedin.com/in/aravind-kumar-rajendran/" target="_blank">LinkedIn Profile</a>
+      </div>
+
+      <div class="expert-card">
+        <img src="/profile_pics/mageshwar.jpeg" alt="mageshwar J Picture" />
+        <h2>Mageshwar J</h2>
+        <p>UI/UX Designer</p>
+        <p>Experience: 5 Years</p>
+        <a href="https://www.linkedin.com/in/jmageshwar/" target="_blank">LinkedIn Profile</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Experts Section -->
-<section class="content-section">
-  <h2 style="text-align:center;">Connected Experts</h2>
-  <div class="container">
-    <div class="expert-card">
-      <img src="/profile_pics/karthik.jpeg" alt="Karthik Selvaraj Picture" />
-      <h2>Karthik Selvaraj</h2>
-      <p>Software Engineer</p>
-      <p>Experience: 5 Years</p>
-      <a href="https://www.linkedin.com/in/karthik-selvaraj-11ba05124/" target="_blank">LinkedIn Profile</a>
+  <!-- colleges Section -->
+  <section class="colleges-section">
+    <h2>Partnered colleges</h2>
+    <div class="colleges-grid">
+      <div class="college-card">
+        <img src="/profile_pics/cambridge.png" alt="Cambridge Institute of Technology" />
+        <h2>Cambridge Institute of Technology</h2>
+      </div>
+
+      <div class="college-card">
+        <img src="/profile_pics/eastpoint.jpg" alt="East Point Institute of Technology" />
+        <h2>East Point Institute of Technology</h2>
+      </div>
+
     </div>
-
-    <div class="expert-card">
-      <img src="/profile_pics/aravind.jpeg" alt="Aravind Rajendran Picture" />
-      <h2>Aravind Rajendran</h2>
-      <p>Machine Learning Engineer</p>
-      <p>Experience: 5 Years</p>
-      <a href="https://www.linkedin.com/in/aravind-kumar-rajendran/" target="_blank">LinkedIn Profile</a>
-    </div>
-
-    <div class="expert-card">
-      <img src="/profile_pics/mageshwar.jpeg" alt="mageshwar J Picture" />
-      <h2>Mageshwar J</h2>
-      <p>UI/UX Designer</p>
-      <p>Experience: 5 Years</p>
-      <a href="https://www.linkedin.com/in/jmageshwar/" target="_blank">LinkedIn Profile</a>
-    </div>
-  </div>
-</section>
-
-<!-- Connected Universities Section -->
-<section class="universities-section">
-  <h2>Connected Universities</h2>
-  <div class="universities-grid">
-    <div class="university-card">
-      <img src="/profile_pics/cambridge.png" alt="Cambridge Institute of Technology" />
-      <h3>Cambridge Institute of Technology</h3>
-    </div>
-    <div class="university-card">
-      <img src="/profile_pics/eastpoint.jpg" alt="East Point Institute of Technology" />
-      <h3>East Point Institute of Technology</h3>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 </body>
 </html>
