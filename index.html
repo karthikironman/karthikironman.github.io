@@ -280,7 +280,6 @@
 
   .flowchart-box {
     text-align: center;
-    padding: 2rem;
     border-radius: 12px;
     background-color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -289,7 +288,7 @@
   }
 
   .flowchart-box img {
-    max-width: 100px;
+    max-width: 100%;
     margin-bottom: 1rem;
   }
 
@@ -327,7 +326,9 @@
       flex-direction: column;
       gap: 2rem;
     }
-
+    .flowchart-box {
+    width: 90%;
+  }
     .expert-side:before, .college-side:after {
       display: none;
     }
@@ -376,7 +377,7 @@
   <div class="flowchart-container">
     <div class="flowchart-box expert-side">
       <h3>Industry Experts</h3>
-      <img src="/path_to_your_image/experts.png" alt="Industry Experts">
+      <img src="/profile_pics/professional.jpg" alt="Industry Experts">
       <p>Experts share their knowledge</p>
     </div>
 
@@ -388,7 +389,7 @@
 
     <div class="flowchart-box college-side">
       <h3>Educational Institutions</h3>
-      <img src="/path_to_your_image/colleges.png" alt="Educational Institutions">
+      <img src="/profile_pics/student.jpg" alt="Educational Institutions">
       <p>Colleges receive industry insights</p>
     </div>
   </div>
