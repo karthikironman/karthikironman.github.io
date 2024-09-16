@@ -1,444 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GUESTLECTURE.BUZZ - Industry Experts for Guest Lectures</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESTLECTURE.BUZZ - Industry Experts for Guest Lectures</title>
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/profile_pics/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/profile_pics/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/profile_pics/favicon_io/favicon-16x16.png">
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/profile_pics/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/profile_pics/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/profile_pics/favicon_io/favicon-16x16.png"
+    />
 
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #000;
-    }
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #000;
+      }
 
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 2rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    header img {
-      max-height: 100px;
-      margin-right: 2rem;
-    }
-
-    .header-text {
-      text-align: left;
-    }
-
-    .header-text h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-
-    .header-text h2 {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #ccc;
-    }
-
-    @media (max-width: 600px) {
       header {
-        flex-direction: column;
-        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       header img {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        max-height: 100px;
+        margin-right: 2rem;
       }
 
       .header-text {
-        text-align: center;
+        text-align: left;
       }
 
       .header-text h1 {
-        font-size: 2rem;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.2;
       }
 
       .header-text h2 {
-        font-size: 1rem;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #ccc;
       }
-    }
 
-    .site-intro {
-      text-align: center;
-      padding: 3rem 1rem;
-      background-color: #000;
-      color: #fff;
-    }
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
 
-    .site-intro h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
+        header img {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
 
-    .site-intro p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: #ccc;
-      font-size: 1.1rem;
-    }
+        .header-text {
+          text-align: center;
+        }
 
-    .content-section {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
+        .header-text h1 {
+          font-size: 2rem;
+        }
 
-    .form-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-bottom: 3rem;
-    }
+        .header-text h2 {
+          font-size: 1rem;
+        }
+      }
 
-    .form-card {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      max-width: 500px;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      border: 1px solid #000;
-    }
+      .site-intro {
+        text-align: center;
+        padding: 3rem 1rem;
+        background-color: #000;
+        color: #fff;
+      }
 
-    .form-card:hover {
-      transform: translateY(-5px);
-    }
+      .site-intro h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
 
-    .form-card h2 {
-      color: #000;
-      margin-bottom: 1rem;
-    }
+      .site-intro p {
+        max-width: 700px;
+        margin: 0 auto;
+        color: #ccc;
+        font-size: 1.1rem;
+      }
 
-    .form-card p {
-      color: #666;
-      margin-bottom: 2rem;
-    }
+      .content-section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
 
-    .form-card button {
-      background-color: #000;
-      color: white;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .form-card button:hover {
-      background-color: #333;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-bottom: 3rem;
-    }
-
-    .expert-card {
-      background-color: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 1rem;
-      max-width: 280px;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      border: 1px solid #000;
-    }
-
-    .expert-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .expert-card img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .expert-card h2 {
-      margin: 1rem 0 0.5rem;
-      color: #333;
-    }
-
-    .expert-card p {
-      color: #666;
-    }
-
-    .colleges-section {
-      padding: 2rem 1rem;
-      background-color: #fff;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 3rem;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
-    }
-
-    .colleges-section h2 {
-      text-align: center;
-      color: #000;
-      margin-bottom: 2rem;
-    }
-
-    .colleges-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 2rem;
-    }
-
-    .college-card {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
-      max-width: 220px;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      border: 1px solid #000;
-    }
-
-    .college-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .college-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .social-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.social-links a {
-  margin: 0.5rem;
-}
-
-.social-links img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-  transform: translateY(-5px);
-}
-
-    @media (min-width: 900px) {
       .form-section {
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 3rem;
       }
 
       .form-card {
-        flex: 1 1 45%;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 2rem;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border: 1px solid #000;
       }
+
+      .form-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .form-card h2 {
+        color: #000;
+        margin-bottom: 1rem;
+      }
+
+      .form-card p {
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .form-card button {
+        background-color: #000;
+        color: white;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .form-card button:hover {
+        background-color: #333;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+      }
+
+      .expert-card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem;
+        max-width: 280px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border: 1px solid #000;
+      }
+
+      .expert-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .expert-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .expert-card h2 {
+        margin: 1rem 0 0.5rem;
+        color: #333;
+      }
+
+      .expert-card p {
+        color: #666;
+      }
+
+      .colleges-section {
+        padding: 2rem 1rem;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+      }
+
+      .colleges-section h2 {
+        text-align: center;
+        color: #000;
+        margin-bottom: 2rem;
+      }
+
+      .colleges-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+      }
+
+      .college-card {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        max-width: 220px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border: 1px solid #000;
+      }
+
+      .college-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .college-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      .social-links img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .social-links img:hover {
+        transform: translateY(-5px);
+      }
+
+      @media (min-width: 900px) {
+        .form-section {
+          flex-wrap: nowrap;
+          justify-content: space-between;
+        }
+
+        .form-card {
+          flex: 1 1 45%;
+        }
+      }
+
+      .flowchart-section {
+        padding: 3rem 1rem;
+        background-color: #f9f9f9;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .flowchart-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .flowchart-box {
+        text-align: center;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        position: relative;
+      }
+
+      .flowchart-box img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .middle {
+        background-color: #000;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .middle img {
+        max-width: 100px;
+        filter: brightness(0) invert(1);
+      }
+
+      .expert-side:before,
+      .college-side:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 2px;
+        background-color: #ccc;
+      }
+
+      .expert-side:before {
+        right: -50px;
+      }
+
+      .college-side:after {
+        left: -50px;
+      }
+
+      @media (max-width: 900px) {
+        .flowchart-container {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .flowchart-box {
+          width: 90%;
+        }
+        .expert-side:before,
+        .college-side:after {
+          display: none;
+        }
+      }
+      .events-section {
+      padding: 2rem 1rem;
+      background-color: #f9f9f9;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
+      border-top: 1px solid #000;
+    }
+    
+
+    .events-section h2 {
+      text-align: center;
+      color: #000;
+      margin-bottom: 2rem;
+    }
+    .event-cards-wrapper{
+      display:flex;
+      flex-wrap: wrap;
     }
 
-  .flowchart-section {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+    .event-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: min( 350px, 100% );
+      margin: 1rem auto;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid #000;
+      padding-bottom: 60px;
+      position: relative; 
+    }
 
-  .flowchart-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+    .event-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
-  .flowchart-box {
-    text-align: center;
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    position: relative;
-  }
+    .event-card h3 {
+      margin: 1rem 0;
+      color: #333;
+    }
 
-  .flowchart-box img {
-    max-width: 100%;
-    margin-bottom: 1rem;
-  }
+    .event-card p {
+      color: #666;
+    }
 
-  .middle {
-    background-color: #000;
-    color: #fff;
-    z-index: 1;
-  }
-
-  .middle img {
-    max-width: 100px;
-    filter: brightness(0) invert(1);
-  }
-
-  .expert-side:before, .college-side:after {
-    content: '';
+    .event-card .btn {
+      background-color: #000;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    /* margin: 1rem; */
+    display: block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 2px;
-    background-color: #ccc;
-  }
-
-  .expert-side:before {
-    right: -50px;
-  }
-
-  .college-side:after {
-    left: -50px;
-  }
-
-  @media (max-width: 900px) {
-    .flowchart-container {
-      flex-direction: column;
-      gap: 2rem;
+    bottom: 10px;
+    width: 8rem;
+    left: 50%;
+    transform: translate(-50%, 0);
     }
-    .flowchart-box {
-    width: 90%;
-  }
-    .expert-side:before, .college-side:after {
-      display: none;
-    }
-  }
-  </style>
-</head>
 
-<body>
-  <header>
-    <img src="/profile_pics/logo/GUESTLECTURE_SMALL_WHTIE.png" alt="GuestLecture.buzz Logo" /> <!-- Increased logo size -->
-    <div class="header-text">
-      <h1>GUESTLECTURE.BUZZ</h1>
-      <h2>Connect with Industry Experts for Guest Lectures and Workshops</h2>
+    .event-card .btn:hover {
+      background-color: #333;
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="/profile_pics/logo/GUESTLECTURE_SMALL_WHTIE.png"
+        alt="GuestLecture.buzz Logo"
+      />
+      <!-- Increased logo size -->
+      <div class="header-text">
+        <h1>GUESTLECTURE.BUZZ</h1>
+        <h2>Connect with Industry Experts for Guest Lectures and Workshops</h2>
+      </div>
+    </header>
+
+    <!-- Site Introduction Section -->
+    <section class="site-intro">
+      <h2>About Our Platform</h2>
+      <p>
+        Our platform connects educational institutions with industry experts who
+        can share their knowledge and experience through guest lectures /
+        Workshops. Join us to bring real-world expertise into the classroom.
+      </p>
+    </section>
+
+    <!-- Flowchart Section -->
+    <section class="flowchart-section">
+      <h2 style="text-align: center">How GuestLecture.Buzz Works</h2>
+      <div class="flowchart-container">
+        <div class="flowchart-box expert-side">
+          <h3>Industry Experts</h3>
+          <img src="/profile_pics/professional.jpg" alt="Industry Experts" />
+          <p>Experts share their knowledge</p>
+        </div>
+
+        <div class="flowchart-box middle">
+          <h3>GuestLecture.Buzz</h3>
+          <img
+            src="/profile_pics/logo/GUESTLECTURE_SMALL_WHTIE.png"
+            alt="GuestLecture.Buzz Platform"
+          />
+          <p>Your trusted middleman</p>
+        </div>
+
+        <div class="flowchart-box college-side">
+          <h3>Educational Institutions</h3>
+          <img src="/profile_pics/student.jpg" alt="Educational Institutions" />
+          <p>Colleges receive industry insights</p>
+        </div>
+      </div>
+    </section>
+     <!-- Our Events Section -->
+  <section class="events-section">
+    <h2>Our Events</h2>
+   <div class="event-cards-wrapper">
+    <div class="event-card">
+      <img src="/profile_pics/events/1.png" alt="Event 1 Photo">
+      <h3>Ham (Amateur) Radio in Today’s Technologies and Emergency Communication Management</h3>
+      <p>18-09-2024</p>
+      <p>Dr. S. Satyapal</p>
+      <p>CITECH - ECE Dept</p>
+      <a href="events/1.html" class="btn">View More</a>
     </div>
-  </header>
 
-  <!-- Site Introduction Section -->
-  <section class="site-intro">
-    <h2>About Our Platform</h2>
-    <p>Our platform connects educational institutions with industry experts who can share their knowledge and experience through guest lectures / Workshops. Join us to bring real-world expertise into the classroom.</p>
+    <!-- Example Upcoming Event -->
+    <div class="event-card">
+      <img src="/profile_pics/events/2.png" alt="Upcoming Event Photo">
+      <h3>UI/UX Design in Sotware Development</h3>
+      <p>TBD</p>
+      <p>Mr. Mageshwar J</p>
+      <p>TBD</p>
+      <!-- <a href="upcoming-event-details.html" class="btn">View More</a> -->
+    </div>
+
+    <div class="event-card">
+      <img src="/profile_pics/events/3.png" alt="Upcoming Event Photo">
+      <h3>AI / ML in Engineering</h3>
+      <p>TBD</p>
+      <p>Mr. Aravind Kumar R</p>
+      <p>TBD</p>
+      <!-- <a href="upcoming-event-details.html" class="btn">View More</a> -->
+    </div>
+
+   </div>
+    
   </section>
 
-  <!-- Forms Section -->
-  <section class="content-section">
-    <div class="form-section">
-      <!-- Form 1: Request Guest Lecture -->
-      <div class="form-card">
-        <h2>Request a Guest Lecture / Workshop</h2>
-        <p>If you are interested in requesting a guest lecture / Workshop from one of our experts, please click the button below to fill out the form:</p>
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBvRK_qDU4f0saQkgHGzeFKZ-LO2AWS3MWnzhXgdYykiks1A/viewform','_blank')">Request Now</button>
+    <!-- Forms Section -->
+    <section class="content-section">
+      <div class="form-section">
+        <!-- Form 1: Request Guest Lecture -->
+        <div class="form-card">
+          <h2>Request a Guest Lecture / Workshop</h2>
+          <p>
+            If you are interested in requesting a guest lecture / Workshop from
+            one of our experts, please click the button below to fill out the
+            form:
+          </p>
+          <button
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBvRK_qDU4f0saQkgHGzeFKZ-LO2AWS3MWnzhXgdYykiks1A/viewform','_blank')"
+          >
+            Request Now
+          </button>
+        </div>
+
+        <!-- Form 2: Experts Connecting with Platform -->
+        <div class="form-card">
+          <h2>Experts Wanting to Connect</h2>
+          <p>
+            If you are an industry expert interested in connecting with our
+            platform, please click the button below to fill out the form:
+          </p>
+          <button
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdbpViHUdVmBE8qVmVlluq8JbZEE4rfrWZ9xLNq2e0KMA8rkw/viewform','_blank')"
+          >
+            Connect Now
+          </button>
+        </div>
       </div>
+    </section>
+    <!-- GuestLecture Team Section -->
+    <section class="content-section">
+      <h2 style="text-align: center">Meet Our Team</h2>
+      <div class="container">
+        <div class="expert-card">
+          <img
+            src="/profile_pics/karthik.jpeg"
+            alt="Karthik Selvaraj Picture"
+          />
+          <h2>Karthik Selvaraj</h2>
+          <p>Operations Manager</p>
+        </div>
 
-      <!-- Form 2: Experts Connecting with Platform -->
-      <div class="form-card">
-        <h2>Experts Wanting to Connect</h2>
-        <p>If you are an industry expert interested in connecting with our platform, please click the button below to fill out the form:</p>
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdbpViHUdVmBE8qVmVlluq8JbZEE4rfrWZ9xLNq2e0KMA8rkw/viewform','_blank')">Connect Now</button>
+        <div class="expert-card">
+          <img
+            src="/profile_pics/harshitha.jpg"
+            alt="Harshitha Murty Picture"
+          />
+          <h2>Harshitha Murthy</h2>
+          <p>Marketing Manager</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
- 
-  <!-- Flowchart Section -->
-<section class="flowchart-section">
-  <h2 style="text-align:center;">How GuestLecture.Buzz Works</h2>
-  <div class="flowchart-container">
-    <div class="flowchart-box expert-side">
-      <h3>Industry Experts</h3>
-      <img src="/profile_pics/professional.jpg" alt="Industry Experts">
-      <p>Experts share their knowledge</p>
-    </div>
-
-    <div class="flowchart-box middle">
-      <h3>GuestLecture.Buzz</h3>
-      <img src="/profile_pics/logo/GUESTLECTURE_SMALL_WHTIE.png" alt="GuestLecture.Buzz Platform">
-      <p>Your trusted middleman</p>
-    </div>
-
-    <div class="flowchart-box college-side">
-      <h3>Educational Institutions</h3>
-      <img src="/profile_pics/student.jpg" alt="Educational Institutions">
-      <p>Colleges receive industry insights</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- GuestLecture Team Section -->
-<section class="content-section">
-  <h2 style="text-align:center;">Meet Our Team</h2>
-  <div class="container">
-
-    <div class="expert-card">
-      <img src="/profile_pics/karthik.jpeg" alt="Karthik Selvaraj Picture" />
-      <h2>Karthik Selvaraj</h2>
-      <p>Operations Manager</p>
-    </div>
-
-    <div class="expert-card">
-      <img src="/profile_pics/harshitha.jpg" alt="Harshitha Murty Picture" />
-      <h2>Harshitha Murthy</h2>
-      <p>Marketing Manager</p>
-    </div>
-
-  </div>
-</section>
-
- <!-- Social Links Section -->
- <section class="content-section">
-  <h2 style="text-align:center;">Connect with us on Social Media</h2>
-  <div class="container">
-    <div class="social-links">
-      <a href="#" target="_blank">
-        <img src="/profile_pics/logo/facebook.png" alt="Facebook" />
-      </a>
-      <a href="#" target="_blank">
-        <img src="/profile_pics/logo/instagram.png" alt="Instagram" />
-      </a>
-      <a href="#" target="_blank">
-        <img src="/profile_pics/logo/twitter.png" alt="Twitter" />
-      </a>
-      <a href="#" target="_blank">
-        <img src="/profile_pics/logo/linkedin.png" alt="LinkedIn" />
-      </a>
-      <a href="#" target="_blank">
-        <img src="/profile_pics/logo/whatsapp.png" alt="whatsapp" />
-      </a>
-    </div>
-  </div>
-</section>
-
-</body>
+    <!-- Social Links Section -->
+    <section class="content-section">
+      <h2 style="text-align: center">Connect with us on Social Media</h2>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" target="_blank">
+            <img src="/profile_pics/logo/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="/profile_pics/logo/instagram.png" alt="Instagram" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="/profile_pics/logo/twitter.png" alt="Twitter" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="/profile_pics/logo/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="/profile_pics/logo/whatsapp.png" alt="whatsapp" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
