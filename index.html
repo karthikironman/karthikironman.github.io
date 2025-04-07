@@ -6,169 +6,182 @@
     <title>Shelq - Smart Shelving Solutions</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
+            color: #333;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #f8f8f8;
+            padding: 1.5em 0;
             text-align: center;
-            padding: 2em 0;
         }
 
         nav {
-            background-color: #444;
+            background-color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 0.8em 0;
+            border-bottom: 1px solid #eee;
         }
 
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            padding: 0.5em 1em;
+            padding: 0.6em 1.2em;
+            transition: color 0.3s ease;
+            display: inline-block; /* Prevent wrapping on narrow screens */
+        }
+
+        nav a:hover {
+            color: #007bff;
         }
 
         section {
-            padding: 2em;
-            max-width: 800px;
+            padding: 2em 1em; /* Reduced padding for mobile */
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+            gap: 20px; /* Reduced gap for mobile */
         }
 
         .product-item {
-            border: 1px solid #ddd;
-            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+            padding: 1.5em; /* Reduced padding */
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-3px); /* Reduced hover effect */
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.8em; /* Reduced margin */
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #f8f8f8;
             text-align: center;
-            padding: 1em 0;
-            position:relative;
-            bottom:0;
-            width:100%;
+            padding: 1.5em 0; /* Reduced padding */
+            border-top: 1px solid #eee;
         }
 
         .hero {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1600x600'); /* Replace with your image */
-          background-size: cover;
-          background-position: center;
-          color: white;
-          text-align: center;
-          padding: 100px 20px;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 1em; /* Reduced padding */
         }
 
         .hero h1 {
-          font-size: 3em;
-          margin-bottom: 20px;
+            font-size: 2.5em; /* Reduced font size for mobile */
+            margin-bottom: 15px; /* Reduced margin */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Reduced shadow */
         }
 
         .hero p {
-          font-size: 1.2em;
+            font-size: 1.1em; /* Reduced font size for mobile */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
-        .contact-form {
-          display: flex;
-          flex-direction: column;
-          max-width: 400px;
-          margin: 0 auto;
-        }
-
-        .contact-form label,
-        .contact-form input,
-        .contact-form textarea,
-        .contact-form button {
-          margin-bottom: 10px;
-        }
-
-        .contact-form button {
-          background-color: #333;
-          color: white;
-          padding: 10px 15px;
-          border: none;
-          cursor: pointer;
+        .section-title {
+            font-size: 2em; /* Reduced font size for mobile */
+            margin-bottom: 0.8em; /* Reduced margin */
+            text-align: center;
+            color: #2c3e50;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Shelq - Smart Shelving Solutions</h1>
+        <h1>Shelq</h1>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
     </nav>
 
     <section id="home" class="hero">
-      <h1>Revolutionizing Storage with Smart Shelves</h1>
-      <p>Efficient, intelligent, and tailored shelving solutions for your needs.</p>
+        <video autoplay muted loop>
+            <source src="./shelq_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1>Smart Storage, Simplified.</h1>
+            <p>Innovative shelving solutions for modern living and industry.</p>
+        </div>
     </section>
 
     <section id="products">
-        <h2>Our Products</h2>
+        <h2 class="section-title">Our Solutions</h2>
         <div class="product-grid">
             <div class="product-item">
-                <img src="https://via.placeholder.com/200" alt="Kitchen Smart Shelf">
-                <h3>Kitchen Smart Shelf</h3>
-                <p>Intelligent storage for your kitchen essentials.</p>
+                <img src="./kitchen.jpg" alt="Kitchen Smart Shelf">
+                <h3>Smart Kitchen Shelves</h3>
+                <p>Optimize your kitchen space with intelligent shelving.</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/200" alt="Warehouse Smart Shelf">
-                <h3>Warehouse Smart Shelf</h3>
-                <p>Optimized shelving for efficient inventory management.</p>
+                <img src="./warehouse.jpg" alt="Warehouse Smart Shelf">
+                <h3>Industrial Shelving</h3>
+                <p>Efficient storage for warehouses and industrial spaces.</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/200" alt="Retail Smart Shelf">
-                <h3>Retail Smart Shelf</h3>
-                <p>Smart displays to enhance customer experience.</p>
+                <img src="./retail.jpg" alt="Retail Smart Shelf">
+                <h3>Retail Displays</h3>
+                <p>Enhance customer experience with smart retail shelving.</p>
             </div>
-          <div class="product-item">
-                <img src="https://via.placeholder.com/200" alt="Pantry Smart Shelf">
-                <h3>Pantry Smart Shelf</h3>
+            <div class="product-item">
+                <img src="./pantry.jpg" alt="Pantry Smart Shelf">
+                <h3>Smart Pantry Systems</h3>
                 <p>Keep your pantry organized and efficient.</p>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>Shelq is dedicated to providing innovative smart shelving solutions for various industries. Our products are designed to improve organization, efficiency, and overall user experience.</p>
-        <p>We leverage cutting-edge technology to create intelligent storage systems that adapt to your needs.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for more information or to request a quote.</p>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <h2 class="section-title">About Shelq</h2>
+        <p>At Shelq, we design and develop cutting-edge smart shelving solutions. Our aim is to revolutionize storage across various industries, making spaces more organized, efficient, and intelligent. We leverage the latest technology to create products that adapt to the dynamic needs of our customers.</p>
+        <p>Our commitment to innovation and quality drives us to continuously improve and expand our product offerings. We believe in creating spaces that are not just functional, but also smart and intuitive.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Shelq.com. All rights reserved.</p>
+        <p>&copy; 2024 Shelq.com</p>
     </footer>
 
 </body>
