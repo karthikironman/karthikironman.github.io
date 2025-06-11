@@ -3,286 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartKart - The Future of Kirana</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Service Profile - Rahul</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
     }
-    header {
-      background: #ffffff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    .container {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    header h1 {
-      font-size: 24px;
-      color: #00796b;
-    }
-    nav a {
-      color: #333;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #00796b;
-    }
-    .hero {
-      padding: 100px 40px;
-      background: linear-gradient(to right, #e0f2f1, #b2dfdb);
-      color: #004d40;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 42px;
-      font-weight: 800;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-top: 20px;
+    h1, h2 {
+      color: #003366;
     }
     .section {
-      padding: 60px 40px;
+      margin-bottom: 30px;
     }
-    .section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #00796b;
+    .potential-products ul, .recent-visits ul, .skills ul, .contact-info ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .potential-products li, .recent-visits li, .skills li, .contact-info li {
+      background: #e8f0fe;
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid #4285f4;
     }
-    .card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card h4 {
-      color: #00796b;
-      margin-bottom: 10px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: left;
-    }
-    th {
-      background-color: #00796b;
-      color: #fff;
-    }
-    td {
-      background-color: #fff;
-    }
-    footer {
-      background: #eeeeee;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
-    }
-    .image-row {
+    .profile-header {
       display: flex;
+      align-items: center;
       gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
     }
-    .image-row img {
-      width: 300px;
-      height: auto;
-      border-radius: 12px;
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: 2px solid #003366;
+    }
+    .map-container {
+      text-align: center;
+    }
+    .map-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .testimonials blockquote {
+      border-left: 5px solid #ccc;
+      padding-left: 15px;
+      margin: 10px 0;
+      font-style: italic;
+    }
+    .testimonials cite {
+      display: block;
+      margin-top: 5px;
+      text-align: right;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shelq</h1>
-    <!-- <nav>
-      <a href="#investor">For Investors</a>
-      <a href="#kirana">For Shopkeepers</a>
-      <a href="#users">For Customers</a>
-    </nav> -->
-  </header>
-
-  <div class="hero">
-    <h2>Revolutionizing Kirana Shopping with Smart Shelves 🚀</h2>
-    <p>No more dark stores. Just tech-powered local kiranas delivering at lightning speed!</p>
-  </div>
-
-  <div class="section" id="investor">
-    <h3>👨‍💼 For Investors</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>Low CapEx</h4>
-        <p>No need for warehouses. We plug into existing kirana shops using smart IoT shelves.</p>
-      </div>
-      <div class="card">
-        <h4>Faster Scale</h4>
-        <p>New city? Just onboard shops. No real estate, no logistics mess.</p>
-      </div>
-      <div class="card">
-        <h4>Better Unit Economics</h4>
-        <p>Shared delivery ops, shared space, low burn. Breakeven comes faster.</p>
+  <div class="container">
+    <div class="profile-header">
+      <img src="rahul.png" alt="Rahul's Profile Picture" class="profile-pic" />
+      <div>
+        <h1>Service Profile: Rahul</h1>
+        <p><strong>Experience:</strong> 12+ years in customer support and technical service at Nordson, specializing in MCS products and field deployments. Rahul has consistently delivered high-performance support, enabling customer satisfaction and repeat orders.</p>
+        <p><strong>Strengths:</strong> Deep technical knowledge, empathetic communication, cross-functional collaboration, quick problem resolution.</p>
       </div>
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Factor</th>
-          <th>Dark Store Model</th>
-          <th>Kirana + Smart Shelf Model</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Inventory Ownership</td>
-          <td>You buy and manage stock</td>
-          <td>Shop owns stock — zero inventory risk</td>
-        </tr>
-        <tr>
-          <td>Rent</td>
-          <td>High (warehouse costs)</td>
-          <td>₹0 — kirana shop already pays rent</td>
-        </tr>
-        <tr>
-          <td>CapEx</td>
-          <td>Minimal (shelves, racks)</td>
-          <td>Medium — IoT hardware investment</td>
-        </tr>
-        <tr>
-          <td>Order Fulfillment Time</td>
-          <td>Fast if stores are dense enough</td>
-          <td>Even faster (local shops are hyper-local)</td>
-        </tr>
-        <tr>
-          <td>Scalability</td>
-          <td>Slow — needs physical expansion</td>
-          <td>Rapid — onboard new kiranas quickly</td>
-        </tr>
-        <tr>
-          <td>Product Availability</td>
-          <td>Controlled & limited SKUs</td>
-          <td>Varies by shop — less consistency</td>
-        </tr>
-        <tr>
-          <td>Tech Complexity</td>
-          <td>Medium</td>
-          <td>High (real-time sync, multi-vendor ops)</td>
-        </tr>
-        <tr>
-          <td>Partner Management</td>
-          <td>None (fully owned ops)</td>
-          <td>High — kiranas need training</td>
-        </tr>
-        <tr>
-          <td>Margins</td>
-          <td>Higher (you own the inventory)</td>
-          <td>Lower (you give a cut to kiranas)</td>
-        </tr>
-        <tr>
-          <td>Unit Economics</td>
-          <td>Loss-heavy per order</td>
-          <td>Can breakeven faster</td>
-        </tr>
-        <tr>
-          <td>Customer Trust</td>
-          <td>Medium (new brand)</td>
-          <td>High — local shop trust</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="section">
+      <h2>Current Relationships</h2>
+      <p>Rahul has built strong, trust-based relationships with over 60+ 8000/ProNet customers across India. His commitment to responsiveness and long-term technical support has led to deep penetration within manufacturing hubs, especially in Tamil Nadu, Maharashtra, and Gujarat.</p>
+    </div>
 
-    <div class="image-row">
-      <img src="./kirana.webp" alt="Kirana Shop">
-      <img src="./dark.avif" alt="Delivery Person">
+    <div class="section potential-products">
+      <h2>Cross-Selling Potential (Other Nordson Divisions)</h2>
+      <ul>
+        <li><strong>Adhesive Dispensing Systems:</strong> Useful for Rahul’s packaging, FMCG, and corrugated box clients.</li>
+        <li><strong>Polymer Processing Solutions:</strong> Beneficial for customers in automotive and plastics manufacturing.</li>
+        <li><strong>Industrial Coating Systems:</strong> Relevant for metal, electronics, and appliance manufacturers Rahul serves.</li>
+        <li><strong>Test & Inspection:</strong> For clients needing process monitoring and QA support.</li>
+        <li><strong>Electronics Dispensing:</strong> Growing opportunity with small-scale EMS and PCB assembly lines Rahul visits.</li>
+      </ul>
     </div>
-  </div>
 
-  <div class="section" id="kirana">
-    <h3>🛍️ For Shopkeepers</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>Zero Investment</h4>
-        <p>We install the smart shelf. You just sell more.</p>
-      </div>
-      <div class="card">
-        <h4>Extra Orders</h4>
-        <p>Get orders from customers nearby through our app, without lifting a finger.</p>
-      </div>
-      <div class="card">
-        <h4>Daily Payouts</h4>
-        <p>Earn commission per order. Get paid every day.</p>
-      </div>
+    <div class="section recent-visits">
+      <h2>Recent Customer Visits</h2>
+      <ul>
+        <li>ABC Packaging Pvt Ltd - Chennai - MCS installation + team training (Feb 2024)</li>
+        <li>Sigma Pipes - Pune - Annual maintenance + upsell meeting (Jan 2024)</li>
+        <li>Rathna Plastics - Coimbatore - Troubleshooting & coating systems discussion (Mar 2024)</li>
+      </ul>
     </div>
-  </div>
 
-  <div class="section" id="users">
-    <h3>⚡ For Customers</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>Under 10 Min Delivery</h4>
-        <p>Items are picked from the closest kirana near you.</p>
-      </div>
-      <div class="card">
-        <h4>Real-Time Stock</h4>
-        <p>Our smart shelves know what's in stock, so you don't waste time.</p>
-      </div>
-      <div class="card">
-        <h4>Support Local</h4>
-        <p>Every order helps your neighborhood shop grow. Feel good shopping.</p>
-      </div>
+    <div class="section map-container">
+      <h2>Customer Presence Map</h2>
+      <p>Highlighted regions where Rahul has strong customer relationships across India:</p>
+      <img src="india.png" alt="India Map with Rahul's Customer Hotspots" />
+    </div>
+
+    <div class="section testimonials">
+      <h2>Customer Testimonials</h2>
+      <blockquote>
+        "Rahul's technical guidance helped us cut downtime by 30%. We always call him first for anything Nordson-related."
+        <cite>– Plant Head, Sigma Pipes</cite>
+      </blockquote>
+      <blockquote>
+        "He doesn’t just sell – he solves problems. His reliability is what keeps us coming back."
+        <cite>– Maintenance Manager, ABC Packaging</cite>
+      </blockquote>
+      <blockquote>
+        "Thanks to Rahul’s intervention, we managed to integrate a second Nordson division into our process within 6 weeks."
+        <cite>– Operations Manager, Rathna Plastics</cite>
+      </blockquote>
+    </div>
+
+    <div class="section skills">
+      <h2>Key Skills & Competencies</h2>
+      <ul>
+        <li>Diagnostics and troubleshooting</li>
+        <li>Customer retention and satisfaction</li>
+        <li>Multi-division product awareness</li>
+        <li>Training and onboarding new technicians</li>
+        <li>Data-driven service reporting</li>
+      </ul>
+    </div>
+
+    <div class="section contact-info">
+      <h2>Contact & Collaboration</h2>
+      <ul>
+        <li><strong>Email:</strong> rahul.nordson@example.com</li>
+        <li><strong>Phone:</strong> +91 98765 43210</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/rahul-nordson</li>
+        <li><strong>Available for:</strong> Cross-division leads, joint visits, new deployments</li>
+      </ul>
     </div>
   </div>
-  <div class="section" id="why-smartshelves">
-    <h3>🤖 Why Smart Shelves?</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>No Tech Training Needed</h4>
-        <p>Most kirana owners aren’t app-first people. With smart shelves, they don’t need to learn complex software — just install it and start selling.</p>
-      </div>
-      <div class="card">
-        <h4>Runs Automatically</h4>
-        <p>Smart shelves detect inventory changes in real time. No need to manually update stock or open an app every day.</p>
-      </div>
-      <div class="card">
-        <h4>App is Optional</h4>
-        <p>Shopkeepers can still use the app to view earnings or track orders — but it’s not compulsory. The shelf handles the backend silently.</p>
-      </div>
-      <div class="card">
-        <h4>Faster Onboarding</h4>
-        <p>Compared to software-based systems that require training, smart shelves get a shop online in under 30 minutes. Plug and play.</p>
-      </div>
-      <div class="card">
-        <h4>Scales Better in Bharat</h4>
-        <p>In Tier 2/3 towns, digital adoption is slower. Smart shelves work even for shopkeepers who aren’t digitally savvy — helping us scale faster across India.</p>
-      </div>
-    </div>
-  </div>
-  <footer>
-    &copy; 2025 SmartKart. Built for the future of Indian retail.
-  </footer>
 </body>
 </html>
