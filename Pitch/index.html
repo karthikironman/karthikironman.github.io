@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Retail Pads</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      background: #e0f2fe;
+      margin-bottom: 1rem;
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+
+    .img-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .img-block img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonials blockquote {
+      background: #fff;
+      border-left: 5px solid #007bff;
+      margin: 2rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .testimonials cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .contact {
+      background-color: #f1f1f1;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .contact p {
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #222;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Smart Retail Pads</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Smarter Shelves, Stronger Sales</h2>
+  <p>Say goodbye to stockouts and manual checks. Our weight-sensing pads help retailers track thousands of items in real time—right from their phone.</p>
+</section>
+
+<section class="features" id="features">
+  <h3>Retail-Ready Features</h3>
+  <ul>
+    <li>📦 Live inventory tracking with weight sensors under each shelf or product stack.</li>
+    <li>🔔 Restock alerts to staff via dashboard or mobile app when items fall below minimum level.</li>
+    <li>🧠 AI-powered sales analytics: Understand fast/slow movers, peak times, refill frequency.</li>
+  </ul>
+  <div class="img-block">
+    <img src="1.png" alt="Smart Pad Shelf Demo">
+  </div>
+  <ul>
+    <li>💡 Easy to install: Just place the pad under your products. It works wirelessly.</li>
+    <li>🔋 Runs for months on battery or connect to USB-C for always-on power.</li>
+    <li>🌐 Dashboard to monitor 1 store or 1000—perfect for kiranas and chains alike.</li>
+  </ul>
+</section>
+
+<div class="img-block">
+  <img src="3.png" alt="Retail Pad Close-up">
+</div>
+
+<section class="how-it-works" id="how-it-works">
+  <h3>How It Works</h3>
+  <p>Each pad detects weight changes with high precision. As soon as an item is picked or added, the data is synced to your dashboard or mobile app through a Bluetooth/Wi-Fi gateway.</p>
+
+  <div class="img-block">
+    <img src="5.png" alt="Smart Pad Working Diagram">
+  </div>
+
+  <p>You can configure minimum quantity thresholds per item, and receive instant alerts for low stock or shelf refill requests. It's like having a digital assistant for every shelf.</p>
+
+  <p>Our cloud dashboard gives you access to trends, usage heatmaps, and refill suggestions so you can restock smarter and sell more.</p>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h3>Trusted by Smart Retailers</h3>
+  <blockquote>
+    “We started with 300 pads across multiple aisles. The accuracy is excellent. Now we’re scaling to 1000+ pads. My team saves hours of inventory effort every week.”
+    <cite>– Ramesh Jain, Grocery Store Chain Owner, Pune</cite>
+  </blockquote>
+  <div class="img-block">
+    <img src="7.png" alt="Pads Installed at Store">
+  </div>
+  <blockquote>
+    “It feels like our shelves talk to us. We know exactly which rack needs refill. This system has changed the way we operate daily.”
+    <cite>– Asha Varma, FMCG Franchise Partner, Mumbai</cite>
+  </blockquote>
+</section>
+
+<section class="contact" id="contact">
+  <h3>Let’s Talk Smart Retail</h3>
+  <p>Deploy 100s or 1000s of smart pads in your store or chain. Contact us for a demo, bulk pricing, or a custom pilot project.</p>
+  <a href="mailto:sales@smartshelfpads.com">📩 Email Us</a>
+</section>
+
+<footer>
+  &copy; 2025 Smart Shelf Pads. Built with ❤️ for scalable Indian retail.
+</footer>
+
+</body>
+</html>
