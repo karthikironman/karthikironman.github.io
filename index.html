@@ -1,152 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Profile - Rahul</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    .container {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .potential-products ul, .recent-visits ul, .skills ul, .contact-info ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .potential-products li, .recent-visits li, .skills li, .contact-info li {
-      background: #e8f0fe;
-      margin: 8px 0;
-      padding: 10px;
-      border-left: 5px solid #4285f4;
-    }
-    .profile-header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #003366;
-    }
-    .map-container {
-      text-align: center;
-    }
-    .map-container img {
-      max-width: 100%;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-    .testimonials blockquote {
-      border-left: 5px solid #ccc;
-      padding-left: 15px;
-      margin: 10px 0;
-      font-style: italic;
-    }
-    .testimonials cite {
-      display: block;
-      margin-top: 5px;
-      text-align: right;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="profile-header">
-      <img src="rahul.png" alt="Rahul's Profile Picture" class="profile-pic" />
-      <div>
-        <h1>Service Profile: Rahul</h1>
-        <p><strong>Experience:</strong> 12+ years in customer support and technical service at Nordson, specializing in MCS products and field deployments. Rahul has consistently delivered high-performance support, enabling customer satisfaction and repeat orders.</p>
-        <p><strong>Strengths:</strong> Deep technical knowledge, empathetic communication, cross-functional collaboration, quick problem resolution.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelq – Smart Retail Weighing Pods</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #2a2a2a;
+        background-color: #fafafa;
+      }
+      header {
+        background: url("11.png") center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+      }
+      header img.logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 150px;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.85
+        ); /* semi-transparent white */
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+      header button {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        background-color: #822f51;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      section h2 {
+        color: #6a1b3e;
+      }
+      .how-it-works img,
+      .features img,
+      .product-showcase img,
+      .gallery img,
+      .accessibility img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+        margin: 1rem;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .feature {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 10px rgba(130, 47, 81, 0.1);
+        text-align: center;
+      }
+      .manpower {
+        background-color: #fff0f4;
+        border-left: 6px solid #822f51;
+        padding: 2rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+      }
+      footer {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+      footer button {
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        background-color: #822f51;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      .contact-info {
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Shelq Logo" class="logo" />
+      <h1>Real-Time Inventory Monitoring for Smarter Retail</h1>
+      <p>
+        Battery-powered weight sensors that live-monitor products and alert you
+        before you run out.
+      </p>
+      <button>Get a Demo</button>
+    </header>
+
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="flex">
+        <img src="5.png" alt="How it works illustration" />
+        <ul>
+          <li>
+            <strong>Smart Pods:</strong> Under each item, detect live weight.
+          </li>
+          <li>
+            <strong>Bluetooth Gateway:</strong> Collects data from up to 1500
+            pods.
+          </li>
+          <li>
+            <strong>Cloud Upload:</strong> Sends insights and alerts in
+            real-time.
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Current Relationships</h2>
-      <p>Rahul has built strong, trust-based relationships with over 60+ 8000/ProNet customers across India. His commitment to responsiveness and long-term technical support has led to deep penetration within manufacturing hubs, especially in Tamil Nadu, Maharashtra, and Gujarat.</p>
-    </div>
+    <section class="product-showcase">
+      <h2>Hardware Spotlight</h2>
+      <div class="flex">
+        <img src="3.png" alt="Single pod and gateway" />
+        <img src="4.png" alt="Pods of different sizes" />
+      </div>
+    </section>
 
-    <div class="section potential-products">
-      <h2>Cross-Selling Potential (Other Nordson Divisions)</h2>
-      <ul>
-        <li><strong>Adhesive Dispensing Systems:</strong> Useful for Rahul’s packaging, FMCG, and corrugated box clients.</li>
-        <li><strong>Polymer Processing Solutions:</strong> Beneficial for customers in automotive and plastics manufacturing.</li>
-        <li><strong>Industrial Coating Systems:</strong> Relevant for metal, electronics, and appliance manufacturers Rahul serves.</li>
-        <li><strong>Test & Inspection:</strong> For clients needing process monitoring and QA support.</li>
-        <li><strong>Electronics Dispensing:</strong> Growing opportunity with small-scale EMS and PCB assembly lines Rahul visits.</li>
-      </ul>
-    </div>
+    <section class="features">
+      <h2>Powerful Features</h2>
+      <img src="8.png" alt="Features icons" />
+      <div class="features-grid">
+        <div class="feature">Out-of-stock Alerts</div>
+        <div class="feature">Live Weight Monitoring</div>
+        <div class="feature">Historical Analytics</div>
+        <div class="feature">Low Battery Notifications</div>
+        <div class="feature">Multiple Pod Sizes</div>
+        <div class="feature">Plug & Play Setup</div>
+      </div>
+    </section>
 
-    <div class="section recent-visits">
-      <h2>Recent Customer Visits</h2>
-      <ul>
-        <li>ABC Packaging Pvt Ltd - Chennai - MCS installation + team training (Feb 2024)</li>
-        <li>Sigma Pipes - Pune - Annual maintenance + upsell meeting (Jan 2024)</li>
-        <li>Rathna Plastics - Coimbatore - Troubleshooting & coating systems discussion (Mar 2024)</li>
-      </ul>
-    </div>
+    <section class="accessibility">
+      <h2>Accessible Anywhere</h2>
+      <div class="flex">
+        <img src="9.png" alt="Software on laptop" />
+        <img src="10.png" alt="Software on mobile" />
+        <p>
+          Access your retail data on the go. Our software dashboard works
+          seamlessly on laptops, tablets, and smartphones—so you can monitor
+          inventory anytime, anywhere.
+        </p>
+      </div>
+    </section>
 
-    <div class="section map-container">
-      <h2>Customer Presence Map</h2>
-      <p>Highlighted regions where Rahul has strong customer relationships across India:</p>
-      <img src="india.png" alt="India Map with Rahul's Customer Hotspots" />
-    </div>
+    <section class="manpower">
+      <h2>Reduce Manual Labor, Increase Efficiency</h2>
+      <p>
+        With Shelq’s smart shelves, you can significantly cut down on repetitive
+        manual stock-checking and reduce manpower costs. Automated real-time
+        inventory tracking means fewer human errors, optimized staffing, and a
+        leaner operational model.
+      </p>
+    </section>
 
-    <div class="section testimonials">
-      <h2>Customer Testimonials</h2>
-      <blockquote>
-        "Rahul's technical guidance helped us cut downtime by 30%. We always call him first for anything Nordson-related."
-        <cite>– Plant Head, Sigma Pipes</cite>
-      </blockquote>
-      <blockquote>
-        "He doesn’t just sell – he solves problems. His reliability is what keeps us coming back."
-        <cite>– Maintenance Manager, ABC Packaging</cite>
-      </blockquote>
-      <blockquote>
-        "Thanks to Rahul’s intervention, we managed to integrate a second Nordson division into our process within 6 weeks."
-        <cite>– Operations Manager, Rathna Plastics</cite>
-      </blockquote>
-    </div>
+    <section class="gallery">
+      <h2>In-Store Deployments</h2>
+      <div class="flex">
+        <img src="1.png" alt="Shelf example 1" />
+        <img src="6.png" alt="Shelf example 2" />
+        <img src="7.png" alt="Shelf example 3" />
+      </div>
+    </section>
 
-    <div class="section skills">
-      <h2>Key Skills & Competencies</h2>
-      <ul>
-        <li>Diagnostics and troubleshooting</li>
-        <li>Customer retention and satisfaction</li>
-        <li>Multi-division product awareness</li>
-        <li>Training and onboarding new technicians</li>
-        <li>Data-driven service reporting</li>
-      </ul>
-    </div>
-
-    <div class="section contact-info">
-      <h2>Contact & Collaboration</h2>
-      <ul>
-        <li><strong>Email:</strong> rahul.nordson@example.com</li>
-        <li><strong>Phone:</strong> +91 98765 43210</li>
-        <li><strong>LinkedIn:</strong> linkedin.com/in/rahul-nordson</li>
-        <li><strong>Available for:</strong> Cross-division leads, joint visits, new deployments</li>
-      </ul>
-    </div>
-  </div>
-</body>
+    <footer>
+      <h2>Ready to Transform Your Retail Inventory?</h2>
+      <p>Join the smart retail movement. Let’s talk.</p>
+      <button>Request Early Access</button>
+      <div class="contact-info">
+        📞 +91-8447521893<br />
+        📧 smartshelf08@gmail.com
+      </div>
+    </footer>
+  </body>
 </html>
