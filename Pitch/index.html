@@ -1,159 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Retail Weighing Pods</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: url('2.png') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-    header button {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      background-color: #00bfa6;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .how-it-works img,
-    .features img,
-    .product-showcase img,
-    .gallery img,
-    .accessibility img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
-      margin: 1rem;
-    }
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .feature {
-      background-color: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    footer {
-      background-color: #111;
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    footer button {
-      margin-top: 1rem;
-      padding: 1rem 2rem;
-      background-color: #00bfa6;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Real-Time Inventory Monitoring for Smarter Retail</h1>
-    <p>Battery-powered weight sensors that live-monitor products and alert you before you run out.</p>
-    <button>Get a Demo</button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelq – Smart Retail Weighing Pods</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #2a2a2a;
+        background-color: #fafafa;
+      }
+      header {
+        background: url("11.png") center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+      }
+      header img.logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 150px;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.85
+        ); /* semi-transparent white */
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+      header button {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        background-color: #822f51;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      section h2 {
+        color: #6a1b3e;
+      }
+      .how-it-works img,
+      .features img,
+      .product-showcase img,
+      .gallery img,
+      .accessibility img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+        margin: 1rem;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .feature {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 10px rgba(130, 47, 81, 0.1);
+        text-align: center;
+      }
+      .manpower {
+        background-color: #fff0f4;
+        border-left: 6px solid #822f51;
+        padding: 2rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+      }
+      footer {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+      footer button {
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        background-color: #822f51;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      .contact-info {
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Shelq Logo" class="logo" />
+      <h1>Real-Time Inventory Monitoring for Smarter Retail</h1>
+      <p>
+        Battery-powered weight sensors that live-monitor products and alert you
+        before you run out.
+      </p>
+      <button>Get a Demo</button>
+    </header>
 
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <div class="flex">
-      <img src="5.png" alt="How it works illustration" />
-      <ul>
-        <li><strong>Smart Pods:</strong> Under each item, detect live weight.</li>
-        <li><strong>Bluetooth Gateway:</strong> Collects data from up to 1500 pods.</li>
-        <li><strong>Cloud Upload:</strong> Sends insights and alerts in real-time.</li>
-      </ul>
-    </div>
-  </section>
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="flex">
+        <img src="5.png" alt="How it works illustration" />
+        <ul>
+          <li>
+            <strong>Smart Pods:</strong> Under each item, detect live weight.
+          </li>
+          <li>
+            <strong>Bluetooth Gateway:</strong> Collects data from up to 1500
+            pods.
+          </li>
+          <li>
+            <strong>Cloud Upload:</strong> Sends insights and alerts in
+            real-time.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="product-showcase">
-    <h2>Hardware Spotlight</h2>
-    <div class="flex">
-      <img src="3.png" alt="Single pod and gateway" />
-      <img src="4.png" alt="Pods of different sizes" />
-    </div>
-  </section>
+    <section class="product-showcase">
+      <h2>Hardware Spotlight</h2>
+      <div class="flex">
+        <img src="3.png" alt="Single pod and gateway" />
+        <img src="4.png" alt="Pods of different sizes" />
+      </div>
+    </section>
 
-  <section class="features">
-    <h2>Powerful Features</h2>
-    <img src="8.png" alt="Features icons" />
-    <div class="features-grid">
-      <div class="feature">Out-of-stock Alerts</div>
-      <div class="feature">Live Weight Monitoring</div>
-      <div class="feature">Historical Analytics</div>
-      <div class="feature">Low Battery Notifications</div>
-      <div class="feature">Multiple Pod Sizes</div>
-      <div class="feature">Plug & Play Setup</div>
-    </div>
-  </section>
+    <section class="features">
+      <h2>Powerful Features</h2>
+      <img src="8.png" alt="Features icons" />
+      <div class="features-grid">
+        <div class="feature">Out-of-stock Alerts</div>
+        <div class="feature">Live Weight Monitoring</div>
+        <div class="feature">Historical Analytics</div>
+        <div class="feature">Low Battery Notifications</div>
+        <div class="feature">Multiple Pod Sizes</div>
+        <div class="feature">Plug & Play Setup</div>
+      </div>
+    </section>
 
-  <section class="accessibility">
-    <h2>Accessible Anywhere</h2>
-    <div class="flex">
-      <img src="9.png" alt="Software on laptop" />
-      <img src="10.png" alt="Software on mobile" />
-      <p>Access your retail data on the go. Our software dashboard works seamlessly on laptops, tablets, and smartphones—so you can monitor inventory anytime, anywhere.</p>
-    </div>
-  </section>
+    <section class="accessibility">
+      <h2>Accessible Anywhere</h2>
+      <div class="flex">
+        <img src="9.png" alt="Software on laptop" />
+        <img src="10.png" alt="Software on mobile" />
+        <p>
+          Access your retail data on the go. Our software dashboard works
+          seamlessly on laptops, tablets, and smartphones—so you can monitor
+          inventory anytime, anywhere.
+        </p>
+      </div>
+    </section>
 
-  <section class="gallery">
-    <h2>In-Store Deployments</h2>
-    <div class="flex">
-      <img src="1.png" alt="Shelf example 1" />
-      <img src="6.png" alt="Shelf example 2" />
-      <img src="7.png" alt="Shelf example 3" />
-    </div>
-  </section>
+    <section class="manpower">
+      <h2>Reduce Manual Labor, Increase Efficiency</h2>
+      <p>
+        With Shelq’s smart shelves, you can significantly cut down on repetitive
+        manual stock-checking and reduce manpower costs. Automated real-time
+        inventory tracking means fewer human errors, optimized staffing, and a
+        leaner operational model.
+      </p>
+    </section>
 
-  <footer>
-    <h2>Ready to Transform Your Retail Inventory?</h2>
-    <p>Join the smart retail movement. Let’s talk.</p>
-    <button>Request Early Access</button>
-  </footer>
-</body>
+    <section class="gallery">
+      <h2>In-Store Deployments</h2>
+      <div class="flex">
+        <img src="1.png" alt="Shelf example 1" />
+        <img src="6.png" alt="Shelf example 2" />
+        <img src="7.png" alt="Shelf example 3" />
+      </div>
+    </section>
+
+    <footer>
+      <h2>Ready to Transform Your Retail Inventory?</h2>
+      <p>Join the smart retail movement. Let’s talk.</p>
+      <button>Request Early Access</button>
+      <div class="contact-info">
+        📞 +91-8447521893<br />
+        📧 smartshelf08@gmail.com
+      </div>
+    </footer>
+  </body>
 </html>
