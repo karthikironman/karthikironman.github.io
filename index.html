@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">   
-    </head>
-    <body>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a sample paragraph to demonstrate the HTML structure.</p>
-        <button id="myButton">Click Me!</button>
+    <title>Karthik Selvaraj | Software Engineering Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    </body>
+    <header>
+        <div class="container">
+            <h1>Karthik Selvaraj</h1>
+            <p class="tagline">Software Engineering Manager at Nordson</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container profile-section">
+            <img src="profile.png" alt="Karthik Selvaraj" class="profile-image">
+            
+            <section class="about">
+                <h2>About</h2>
+                <p>
+                    I am a dedicated **Software Engineering Manager** with a proven track record of leading high-performing teams and driving successful product development. I specialize in scalable architecture, process optimization, and fostering a collaborative engineering culture.
+                    
+                    <span class="placeholder-text">
+                        (This is where you would put a slightly longer, more detailed summary of your expertise, technologies you focus on, and leadership philosophy.)
+                    </span>
+                </p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="contact">
+                <h2>Connect</h2>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+                    <li><strong>Website:</strong> KarthikSelvaraj.dev</li>
+                </ul>
+                <p class="cta">
+                    Open to connecting about software leadership, technology strategy, and innovation.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Karthik Selvaraj. Built with simplicity.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
 </html>

@@ -1,0 +1,161 @@
+/* Basic Reset and Variables */
+:root {
+    --primary-color: #007bff; /* A nice blue for links/accents */
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --light-gray: #ddd;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff; /* White background for clean look */
+    padding-bottom: 50px; /* Space for the fixed footer if you add one */
+}
+
+/* Utility Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header/Hero Section */
+header {
+    background-color: var(--text-color); /* Dark bar across the top */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Main Content Styling */
+main {
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--light-gray); /* Subtle line for separation */
+    padding-bottom: 5px;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+/* Profile Image and About Section Layout */
+.profile-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* Aligns content to the top */
+}
+
+.profile-image {
+    width: 200px; /* Fixed size for the image */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 5px solid var(--light-gray); /* Simple frame */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.about {
+    flex-grow: 1;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.placeholder-text {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Contact Section */
+.contact ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.contact li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-left: 5px solid var(--primary-color);
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--light-gray);
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    .profile-section {
+        flex-direction: column; /* Stacks image and text vertically */
+        align-items: center; /* Centers items */
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .about {
+        text-align: left;
+    }
+}
